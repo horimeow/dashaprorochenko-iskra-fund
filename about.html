@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Про нас - Благодійний фонд Іскра</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; color: #333; background-color: #f4f7f6; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 50px auto; padding: 40px; background: #fff; border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        
+        /* Шапка сторінки */
+        .header-section { text-align: center; margin-bottom: 50px; }
+        .main-img { width: 100%; max-width: 500px; border-radius: 20px; margin-bottom: 20px; }
+        h1 { color: #3E5871; font-size: 2.8em; margin: 10px 0; }
+        .motto { font-style: italic; color: #666; font-size: 1.2em; }
+
+        /* Блоки тексту */
+        h2 { color: #3E5871; border-bottom: 2px solid #eef2f1; padding-bottom: 10px; margin-top: 40px; }
+        .highlight-box { background: #e8f5e9; padding: 25px; border-radius: 15px; border-left: 6px solid #3E5871; margin: 30px 0; }
+        
+        /* Напрямки роботи */
+        .direction-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .direction-item { background: #fdfdfd; padding: 20px; border: 1px solid #eee; border-radius: 15px; transition: 0.3s; }
+        .direction-item:hover { border-color: #3E5871; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .direction-item strong { color: #3E5871; display: block; margin-bottom: 8px; font-size: 1.1em; }
+
+        /* Декор */
+        .accent-img { width: 100px; display: block; margin: 50px auto 20px auto; }
+        
+        /* Кнопка в рамці (як ти хотіла) */
+        .btn-back {
+            display: inline-block;
+            margin: 40px auto;
+            text-align: center;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #0056b3;
+            padding: 12px 35px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+            color: white;
+            transform: translateY(-3px);
+        }
+        .center { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <img src="images/albums/image_1.png" alt="Іскра надії" class="main-img">
+            <h1>Про фонд «Іскра»</h1>
+            <p class="motto">"Навіть маленька іскра здатна розігнати велику темряву"</p>
+        </div>
+
+        <div class="highlight-box">
+            <strong>Хто ми?</strong><br>
+            Благодійний фонд "Іскра"-це команда волонтерів та небайдужих людей, які об’єдналися навколо однієї мети: запалювати надію там, де її залишилося найменше. Наша команда базується в Київській області, але наша допомога сягає всюди, де вона потрібна.
+        </div>
+
+        <h2>Чому саме "Іскра"?</h2>
+        <p>Назва нашого фонду-це символ. Одна маленька іскра не може обігріти ціле місто, але вона може стати початком великого вогню. Ми віримо, що кожен ваш донат, кожна передана коробка ліків чи дитяча іграшка-це і є та сама іскра. Разом ми створюємо полум’я підтримки, яке неможливо згасити.</p>
+
+        <h2>Наші напрямки роботи</h2>
+        <div class="direction-grid">
+            <div class="direction-item">
+                <strong> Допомога дітям</strong>
+                Ми опікуємося дітьми, які постраждали від війни, організовуємо творчі заходи та забезпечуємо їх необхідними речами.
+            </div>
+            <div class="direction-item">
+                <strong> Медична допомога</strong>
+                Допомагаємо ліками, витратними матеріалами для госпіталів та обладнанням для реабілітації поранених.
+            </div>
+            <div class="direction-item">
+                <strong> Освітні проєкти</strong>
+                Підтримуємо школи, допомагаємо з облаштуванням безпечних просторів та забезпечуємо учнів технікою.
+            </div>
+            <div class="direction-item">
+<strong>🛡️ Підтримка військових</strong>
+                Збираємо кошти на амуніцію, техніку та медикаменти для наших захисників і захисниць.
+            </div>
+            <div class="direction-item" style="grid-column: span 2;">
+                <strong> Гуманітарна допомога</strong>
+                Доставка продуктів, засобів гігієни та теплих речей у деокуповані регіони та прифронтові зони.
+            </div>
+        </div>
+
+        <h2>Наші цінності</h2>
+        <ul>
+            <li><strong>Прозорість:</strong> ми звітуємо за кожну отриману та витрачену гривню.</li>
+            <li><strong>Людяність:</strong> за кожним звітом стоїть конкретна людина, якій ми допомогли.</li>
+            <li><strong>Відповідальність:</strong> ми виконуємо свої обіцянки якісно та вчасно.</li>
+        </ul>
+
+        <div class="center">
+            <img src="images/albums/image_2.png" alt="Серце фонду" class="accent-img">
+            <p><strong>Ваша небайдужість — це наша сила. Тримаймо стрій разом!</strong></p>
+            <a href="index.html" class="btn-back">← Назад на головну</a>
+        </div>
+    </div>
+
+</body>
+</html>

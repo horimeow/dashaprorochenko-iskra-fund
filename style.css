@@ -1,0 +1,343 @@
+body { font-family: sans-serif; background-color: #f4f4f4; }
+
+/* Рядок меню */
+.menu { display: flex; align-items: center; }
+
+/* Кожна кнопка в меню */
+.menu > a, .dropdown > a { 
+    text-decoration: none; background-color: #3E5871; color: white; 
+    padding: 12px 20px; border-radius: 8px; margin-right: 5px; 
+}
+
+/* Випадаючий список */
+.dropdown { position: relative; }
+.dropdown-content { 
+    display: none; position: absolute; top: 100%; left: 0;
+    background-color: white; min-width: 180px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px; padding: 10px 0; z-index: 10;
+}
+.dropdown-content a { 
+    display: block; padding: 10px 20px; color: #333; text-decoration: none; 
+}
+.dropdown-content a:hover { background-color: #e3f2fd; }
+
+/* Показуємо список */
+.dropdown:hover .dropdown-content { display: block; }
+
+/* Стилі для головного блоку */
+.hero { 
+    background-color: #3E5871; /* Темно-синій колір, якщо картинка не знайдеться */  
+    background-size: 20px 20px; /* Відстань між крапками */
+    background-position: 0 0, 10px 10px; /* Зміщення для створення шахового порядку */
+    background-image: url('hero.jpg'); 
+    background-size: cover;          
+    background-position: center;     
+    padding: 100px 50px;             
+    text-align: center; 
+    border-radius: 15px; 
+    margin-top: 20px; 
+    color: white;                    
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8); 
+}
+
+.hero h2 { color: #098b94; font-size: 32px; }
+
+.btn { 
+    display: inline-block; 
+    background-color: #ff5722; 
+    color: white; 
+    padding: 15px 30px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    margin-top: 20px; 
+}
+
+/* Змінюємо фон сторінки на ніжний теплий відтінок */
+body { 
+    background-color: #fdfaf6; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 20px;
+}
+
+/* Стилі для підвалу (footer) */
+footer { 
+    margin-top: 50px; 
+    padding: 20px; 
+    text-align: center; 
+    background-color: #e0d8cf; 
+    border-radius: 10px;
+    color: #5d554d;
+}
+
+footer a { color: #3E5871; text-decoration: none; }
+/* Робимо контакти гарними */
+footer p { margin: 5px 0; }
+footer a { 
+    color: #0066cc; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin: 0 5px;
+}
+footer a:hover { text-decoration: underline; }
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.feature-item h3 {
+    color: #1A5276;
+}
+
+/* Стилі для напрямків (4 картки) */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+}
+.feature-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 23%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Стилі для переваг */
+.advantages {
+    margin-top: 60px;
+    padding: 40px;
+    background: #a2e4f1;
+    border-radius: 15px;
+    text-align: center;
+}
+.adv-list {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+/* Стилі для напрямків (сітка 4 картки) */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.feature-item {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 20%; /* Картки в ряд */
+    min-width: 250px; /* Мінімальна ширина, щоб текст не злипався */
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Стилі для блоку переваг */
+.advantages {
+    margin-top: 60px;
+    padding: 40px;
+    background: #eef6fd;
+    border-radius: 15px;
+    text-align: center;
+}
+.adv-list {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+/* Стилі для статистики */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #3E5871; /* Блакитний колір, як у твоїх кнопок */
+    color: white;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* Робимо відступи для основного контенту */
+main {
+    max-width: 900px; /* Обмежуємо ширину, щоб рядок не був занадто довгим */
+    margin: 40px auto; /* Центруємо блок */
+    padding: 20px;
+    line-height: 1.6; /* Збільшуємо відстань між рядками для легкого читання */
+    font-size: 18px;
+}
+
+/* Красиві заголовки */
+h1 {
+    color: #098b94;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #098b94;
+    margin-top: 30px;
+}
+
+/* Відступи для списків */
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px; /* Відстань між пунктами списку */
+}
+main {
+    max-width: 800px;  /* Обмежує ширину тексту */
+    margin: 20px auto; /* Центрує текст */
+    padding: 20px;
+    line-height: 1.6;  /* Збільшує відстань між рядками */
+}
+/* ---- Стилі для загальної сторінки фото-звітів (з обкладинками альбомів) ---- */
+.year-selector {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.year-selector a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 8px 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.year-selector a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.album-grid { /* Це сітка для обкладинок альбомів на головній сторінці */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.album-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden; /* Щоб зображення не виходило за межі */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+    background-color: white;
+}
+
+.album-card:hover {
+    transform: translateY(-5px); /* Ефект підняття при наведенні */
+}
+
+.album-card img {
+    width: 100%;
+    height: 220px; /* Фіксована висота для всіх обкладинок */
+    object-fit: cover; /* Фото буде обрізане, але не сплющене */
+    display: block;
+}
+
+.album-content {
+    padding: 15px;
+}
+
+.album-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.album-content p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.album-content a {
+    display: inline-block;
+    background-color: #28a745; /* Зелена кнопка, як у контактах */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.album-content a:hover {
+    background-color: #218838;
+}
+
+/* ---- Стилі для детальної сторінки альбому (з багатьма фото) ---- */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.photo-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    background-color: white;
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 250px; /* Фіксована висота для фото в галереї */
+    object-fit: cover;
+    display: block;
+    cursor: pointer; /* Курсор-вказівник, що фото клікабельне */
+    transition: transform 0.2s ease-in-out;
+}
+
+.photo-item img:hover {
+    transform: scale(1.02); /* Легке збільшення при наведенні */
+}
+
+.photo-item p {
+    padding: 10px;
+    font-size: 0.85em;
+    color: #555;
+    margin: 0;
+    min-height: 40px; /* Щоб підписи мали однаковий відступ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

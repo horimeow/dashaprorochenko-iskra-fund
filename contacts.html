@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти - Іскра</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.8; color: #333; background-color: #f9fcfb; margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 60px auto; padding: 40px; background: #fff; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
+        
+        h1 { color: #3E5871; font-size: 2.5em; margin-bottom: 20px; }
+        .subtitle { color: #666; margin-bottom: 40px; font-size: 1.1em; }
+
+        /* Сітка контактів на 2 стовпчики */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px; }
+        .contact-item { padding: 25px; background: #f8fdf9; border-radius: 15px; border: 1px solid #eef2f1; transition: 0.3s; }
+        .contact-item:hover { transform: translateY(-5px); border-color: #28a745; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .contact-item strong { display: block; color: #28a745; font-size: 1.2em; margin-bottom: 10px; }
+        .contact-item a { color: #333; text-decoration: none; font-weight: 500; }
+        .contact-item a:hover { color: #3E5871; text-decoration: underline; }
+
+        .contact-img { width: 120px; margin-bottom: 30px; }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #0056b3;
+            padding: 12px 30px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .btn-home:hover { background-color: #0056b3; color: white; transform: translateY(-3px); }
+
+        .mini-footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="images/albums/image_7.png" alt="Зв'язок" class="contact-img">
+        
+        <h1>Зв'яжіться з нами</h1>
+        <p class="subtitle">Ми завжди відкриті до нових ідей, пропозицій та допомоги!</p>
+
+        <div class="contact-grid">
+            <div class="contact-item">
+                <strong>Електронна пошта</strong>
+                <a href="mailto:iskra.fund@gmail.com">iskra.fund@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Наша локація</strong>
+                <span>Київська область, Україна</span>
+            </div>
+            <div class="contact-item">
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/" target="_blank">@iskra_charity</a>
+            </div>
+            <div class="contact-item">
+                <strong>Facebook</strong>
+                <a href="https://www.facebook.com/" target="_blank">Благодійний фонд "Іскра"</a>
+            </div>
+        </div>
+
+        <p>Ваше повідомлення — це перший крок до великої допомоги.</p>
+        
+        <a href="index.html" class="btn-home">← На головну</a>
+
+        <div class="mini-footer">
+            © 2026 Благодійний фонд "Іскра"
+        </div>
+    </div>
+
+</body>
+</html>
